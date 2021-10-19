@@ -14,7 +14,7 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 
 * High Performance Analog with Dual ADCs
         
-* World's Most Reliable, Lowest Power CAPSENSE Solution
+* World's Most Reliable, Lowest Power CapSense Solution
 * On-board Programmer and Debugger
 
 ### Kit Contents:
@@ -63,10 +63,10 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 * [CY8CKIT-045S Documentation](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-045s)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
-[api]: https://infineon.github.io/TARGET_CY8CKIT-045S/html/modules.html
-[settings]: https://infineon.github.io/TARGET_CY8CKIT-045S/html/md_bsp_settings.html
+[api]: https://cypresssemiconductorco.github.io/TARGET_CY8CKIT-045S/html/modules.html
+[settings]: https://cypresssemiconductorco.github.io/TARGET_CY8CKIT-045S/html/md_bsp_settings.html
 
 ---
 © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2021.
