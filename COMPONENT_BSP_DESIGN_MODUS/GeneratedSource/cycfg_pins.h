@@ -87,11 +87,9 @@ extern "C" {
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
 	#define CYBSP_I2C_SCL (P1_0)
-	#define CYBSP_D14 CYBSP_I2C_SCL
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
 	#define CYBSP_I2C_SDA (P1_1)
-	#define CYBSP_D15 CYBSP_I2C_SDA
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
 	#define CYBSP_SW1 (P1_2)

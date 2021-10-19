@@ -82,11 +82,9 @@
                 </Block>
                 <Block location="ioss[0].port[1].pin[0]">
                     <Alias value="CYBSP_I2C_SCL"/>
-                    <Alias value="CYBSP_D15"/>
                 </Block>
                 <Block location="ioss[0].port[1].pin[1]">
                     <Alias value="CYBSP_I2C_SDA"/>
-                    <Alias value="CYBSP_D14"/>
                 </Block>
                 <Block location="ioss[0].port[1].pin[2]">
                     <Alias value="CYBSP_SW1"/>

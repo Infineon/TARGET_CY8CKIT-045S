@@ -1,14 +1,12 @@
 /***************************************************************************//**
 * \file system_cat2.c
-* \version 1.10.1
+* \version 1.10
 *
 * The device system-source file.
 *
 ********************************************************************************
 * \copyright
-* (c) (2016-2021), Cypress Semiconductor Corporation (an Infineon company) or
-* an affiliate of Cypress Semiconductor Corporation.
-*
+* Copyright 2016-2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,12 +35,12 @@
 * SystemCoreClockUpdate()
 *******************************************************************************/
 
-/** Default SYSCLK system core frequency in Hz */
+/** Default ClkSys system core frequency in Hz */
 #define CY_CLK_SYSTEM_FREQ_HZ_DEFAULT       (24000000UL)
 
 
 /**
-* Holds the SYSCLK system core clock,
+* Holds the ClkSys system core clock,
 * which is the system clock frequency supplied to the SysTick timer and the
 * processor core clock.
 * This variable implements CMSIS Core global variable.
@@ -104,7 +102,7 @@ void SystemInit(void)
 * for the actual implementation.
 *
 * \note Call \ref SystemCoreClockUpdate() in this function if this function
-* affects the HFCLK frequency.
+* affects the CLK_HF0 frequency.
 *
 *******************************************************************************/
 __WEAK void Cy_SystemInit(void)

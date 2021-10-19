@@ -1,14 +1,12 @@
 /***************************************************************************//**
 * \file system_cat2.h
-* \version 1.10.1
+* \version 1.10
 *
 * \brief Device system header file.
 *
 ********************************************************************************
 * \copyright
-* (c) (2016-2021), Cypress Semiconductor Corporation (an Infineon company) or
-* an affiliate of Cypress Semiconductor Corporation.
-*
+* Copyright 2016-2020 Cypress Semiconductor Corporation
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -134,7 +132,7 @@
 * clib-support library that provides newlib-compatible implementations of
 * 'sbrk', '__malloc_lock' and '__malloc_unlock':
 * <br>
-* https://github.com/Infineon/clib-support.
+* https://github.com/cypresssemiconductorco/clib-support.
 *
 * <b>ARM MDK</b>\n
 * \code
@@ -168,38 +166,27 @@
 * \endcode
 *
 * \section group_system_config_changelog Changelog
-* <table class="doxtable">
-*   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
+*   <table class="doxtable">
 *   <tr>
-*     <td rowspan="2">1.10.1</td>
-*     <td>Added support for PMG1S0, PMG1S1, PMG1S2, PMG1S3 devices.</td>
-*     <td>New device support.</td>
+*       <th>Version</th>
+*       <th>Changes</th>
+*       <th>Reason for Change</th>
 *   </tr>
 *   <tr>
-*     <td>Added missing __ICFEDIT_region symbols to the IAR linker scripts.</td>
-*     <td>Improve ICF editor support.</td>
+*       <td>1.10</td>
+*       <td>
+*           - Updated Reset_Handler() for Cortex-M0 devices.
+*           - Updated Reset_Handler() with IAR compiler support.
+*           - Added low-level initialization routine for the RTOS-enabled applications.
+*           - Updated system header with the vector table allocation.
+*           - Set default system core clock frequency to 24 MHz.
+*       </td>
+*       <td>Implementation and documentation enhancements.</td>
 *   </tr>
 *   <tr>
-*     <td rowspan="5">1.10</td>
-*     <td>Updated Reset_Handler() for Cortex-M0 devices.</td>
-*     <td rowspan="5">Implementation and documentation enhancements.</td>
-*   </tr>
-*   <tr>
-*     <td>Updated Reset_Handler() with IAR compiler support.</td>
-*   </tr>
-*   <tr>
-*     <td>Added low-level initialization routine for the RTOS-enabled applications.</td>
-*   </tr>
-*   <tr>
-*     <td>Updated system header with the vector table allocation.</td>
-*   </tr>
-*   <tr>
-*     <td>Set default system core clock frequency to 24 MHz.</td>
-*   </tr>
-*   <tr>
-*     <td>1.0</td>
-*     <td>Initial version</td>
-*     <td></td>
+*       <td>1.0</td>
+*       <td>Initial version</td>
+*       <td></td>
 *   </tr>
 * </table>
 *

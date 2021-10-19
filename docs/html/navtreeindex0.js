@@ -1,9 +1,7 @@
 var NAVTREEINDEX0 =
 {
-"group__group__bsp__errors.html":[2,2],
-"group__group__bsp__errors.html#gaee745bd3fccec6eb2df1e83fc4c9f775":[2,2,0],
-"group__group__bsp__functions.html":[2,3],
-"group__group__bsp__functions.html#gab989986b285e127f78f61c29f6ccbbfa":[2,3,0],
+"group__group__bsp__functions.html":[2,2],
+"group__group__bsp__functions.html#gab989986b285e127f78f61c29f6ccbbfa":[2,2,0],
 "group__group__bsp__pin__state.html":[2,1],
 "group__group__bsp__pin__state.html#ga31577fad7e20fcb174e2ecbea2dd063e":[2,1,1],
 "group__group__bsp__pin__state.html#ga7778aac7809929e1032f406b59cbad90":[2,1,2],
@@ -15,10 +13,8 @@ var NAVTREEINDEX0 =
 "group__group__bsp__pins__arduino.html#ga1246432b2f280267d3b9fd90028f6244":[2,0,3,16],
 "group__group__bsp__pins__arduino.html#ga3e497e03e8e9d8bd597f01426bc4b70a":[2,0,3,2],
 "group__group__bsp__pins__arduino.html#ga403c81e9f770b42e8a77668c9695b2dd":[2,0,3,14],
-"group__group__bsp__pins__arduino.html#ga5234f3a9694175eb70c5e20b9c1d30aa":[2,0,3,21],
 "group__group__bsp__pins__arduino.html#ga53d1f02f664bd82f42989ffa5d34912e":[2,0,3,3],
 "group__group__bsp__pins__arduino.html#ga77222cbe7f9f94826b9970c6bc4843aa":[2,0,3,9],
-"group__group__bsp__pins__arduino.html#ga7831843f5ca6c713a7adcb01291640f9":[2,0,3,20],
 "group__group__bsp__pins__arduino.html#ga7d1263cd4a6e3a4225e69496f200519a":[2,0,3,4],
 "group__group__bsp__pins__arduino.html#ga815d622465be76739d8e71d75725b7a5":[2,0,3,7],
 "group__group__bsp__pins__arduino.html#ga82f65194bfe335814d88649a2033b2f4":[2,0,3,5],
