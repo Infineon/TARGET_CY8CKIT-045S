@@ -1,12 +1,14 @@
 /***************************************************************************//**
 * \file system_cat2.h
-* \version 1.10
+* \version 2.0
 *
 * \brief Device system header file.
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2020 Cypress Semiconductor Corporation
+* (c) (2016-2022), Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
+*
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -127,12 +129,12 @@
 * doesn't check for heap and stack collisions during excessive memory allocations.
 * To ensure the heap always remains within the range defined by __HeapBase and
 * __HeapLimit linker symbols, provide a strong override for the 'sbrk' function:
-* \snippet startup/snippet/main.c snippet_sbrk
+* \snippet startup_snippet.c snippet_sbrk
 * For FreeRTOS-enabled multi-threaded applications, it is sufficient to include
 * clib-support library that provides newlib-compatible implementations of
 * 'sbrk', '__malloc_lock' and '__malloc_unlock':
 * <br>
-* https://github.com/cypresssemiconductorco/clib-support.
+* https://github.com/Infineon/clib-support.
 *
 * <b>ARM MDK</b>\n
 * \code
@@ -166,27 +168,48 @@
 * \endcode
 *
 * \section group_system_config_changelog Changelog
-*   <table class="doxtable">
+* <table class="doxtable">
+*   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
 *   <tr>
-*       <th>Version</th>
-*       <th>Changes</th>
-*       <th>Reason for Change</th>
+*     <td>2.0</td>
+*     <td>Removed unused extern cy_delayFreqHz.</td>
+*     <td>PDL major revision.</td>
 *   </tr>
 *   <tr>
-*       <td>1.10</td>
-*       <td>
-*           - Updated Reset_Handler() for Cortex-M0 devices.
-*           - Updated Reset_Handler() with IAR compiler support.
-*           - Added low-level initialization routine for the RTOS-enabled applications.
-*           - Updated system header with the vector table allocation.
-*           - Set default system core clock frequency to 24 MHz.
-*       </td>
-*       <td>Implementation and documentation enhancements.</td>
+*     <td>1.10.2</td>
+*     <td>Update the paths to the code snippets.</td>
+*     <td>PDL structure update.</td>
 *   </tr>
 *   <tr>
-*       <td>1.0</td>
-*       <td>Initial version</td>
-*       <td></td>
+*     <td rowspan="2">1.10.1</td>
+*     <td>Added support for PMG1S0, PMG1S1, PMG1S2, PMG1S3 devices.</td>
+*     <td>New device support.</td>
+*   </tr>
+*   <tr>
+*     <td>Added missing __ICFEDIT_region symbols to the IAR linker scripts.</td>
+*     <td>Improve ICF editor support.</td>
+*   </tr>
+*   <tr>
+*     <td rowspan="5">1.10</td>
+*     <td>Updated Reset_Handler() for Cortex-M0 devices.</td>
+*     <td rowspan="5">Implementation and documentation enhancements.</td>
+*   </tr>
+*   <tr>
+*     <td>Updated Reset_Handler() with IAR compiler support.</td>
+*   </tr>
+*   <tr>
+*     <td>Added low-level initialization routine for the RTOS-enabled applications.</td>
+*   </tr>
+*   <tr>
+*     <td>Updated system header with the vector table allocation.</td>
+*   </tr>
+*   <tr>
+*     <td>Set default system core clock frequency to 24 MHz.</td>
+*   </tr>
+*   <tr>
+*     <td>1.0</td>
+*     <td>Initial version</td>
+*     <td></td>
 *   </tr>
 * </table>
 *
@@ -250,7 +273,6 @@ extern void     Default_Handler (void);
 
 extern void     Cy_OnResetUser(void);
 
-extern uint32_t cy_delayFreqHz;
 extern uint32_t cy_delayFreqKhz;
 extern uint8_t  cy_delayFreqMhz;
 extern uint32_t cy_delay32kMs;

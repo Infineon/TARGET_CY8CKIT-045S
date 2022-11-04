@@ -6,7 +6,9 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2021 Cypress Semiconductor Corporation
+ * Copyright 2018-2022 Cypress Semiconductor Corporation (an Infineon company) or
+ * an affiliate of Cypress Semiconductor Corporation
+ *
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,6 +34,18 @@ extern "C" {
 #endif
 
 /**
+ * \addtogroup group_bsp_errors Error Codes
+ * \{
+ * Error codes specific to the board.
+ */
+
+/** Failed to configure sysclk power management callback */
+#define CYBSP_RSLT_ERR_SYSCLK_PM_CALLBACK  \
+    (CY_RSLT_CREATE(CY_RSLT_TYPE_ERROR, CY_RSLT_MODULE_ABSTRACTION_BSP, 0))
+
+/** \} group_bsp_errors */
+
+/**
  * \addtogroup group_bsp_functions Functions
  * \{
  * All functions exposed by the board.
@@ -44,6 +58,19 @@ extern "C" {
  *          to the hardware module that had a problem.
  */
 cy_rslt_t cybsp_init(void);
+
+#if defined(CYBSP_CUSTOM_SYSCLK_PM_CALLBACK)
+//--------------------------------------------------------------------------------------------------
+// cybsp_register_custom_sysclk_pm_callback
+//
+// Registers a power management callback that prepares the clock system for entering deep sleep mode
+// and restore the clocks upon wakeup from deep sleep. The application should implement this
+// function and define `CYBSP_CUSTOM_SYSCLK_PM_CALLBACK` if it needs to replace the default SysClk
+// DeepSleep callback behavior with application specific logic.
+// NOTE: This is called automatically as part of \ref cybsp_init
+//--------------------------------------------------------------------------------------------------
+cy_rslt_t cybsp_register_custom_sysclk_pm_callback(void);
+#endif // defined(CYBSP_CUSTOM_SYSCLK_PM_CALLBACK)
 
 /** \} group_bsp_functions */
 

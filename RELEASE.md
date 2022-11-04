@@ -1,7 +1,7 @@
 ### CY8CKIT-045S BSP
-The PSoC 4500S Pioneer Kit (CY8CKIT-045S) is a low-cost hardware platform that enables design and debug of the PSoC 4500S device which is for power and motor control applications. The PSoC 4500S Pioneer Kit enables you to evaluate and develop motor control applications along with CY8CKIT-037.
+The PSoC™ 4500S Pioneer Kit (CY8CKIT-045S) is a low-cost hardware platform that enables design and debug of the PSoC™ 4500S device which is for power and motor control applications. The PSoC™ 4500S Pioneer Kit enables you to evaluate and develop motor control applications along with CY8CKIT-037.
 
-NOTE: BSPs are versioned by family. This means that version 1.2.0 of any BSP in a family (eg: PSoC 6) will have the same software maturity level. However, not all updates are necessarily applicable for each BSP in the family so not all version numbers will exist for each board. Additionally, new BSPs may not start at version 1.0.0. In the event of adding a common feature across all BSPs, the libraries are assigned the same version number. For example if BSP_A is at v1.3.0 and BSP_B is at v1.2.0, the event will trigger a version update to v1.4.0 for both BSP_A and BSP_B. This allows the common feature to be tracked in a consistent way.
+NOTE: BSPs are versioned by family. This means that version 1.2.0 of any BSP in a family (eg: PSoC™ 6) will have the same software maturity level. However, not all updates are necessarily applicable for each BSP in the family so not all version numbers will exist for each board. Additionally, new BSPs may not start at version 1.0.0. In the event of adding a common feature across all BSPs, the libraries are assigned the same version number. For example if BSP_A is at v1.3.0 and BSP_B is at v1.2.0, the event will trigger a version update to v1.4.0 for both BSP_A and BSP_B. This allows the common feature to be tracked in a consistent way.
 
 ### What's Included?
 The CY8CKIT-045S library includes the following:
@@ -14,6 +14,20 @@ The CY8CKIT-045S library includes the following:
 * API documentation
 
 ### What Changed?
+#### v3.0.0
+Note: This revision is only compatible with ModusToolbox Tools 3.0 and newer.
+* Removed default dependency on HAL and CAPSENSE™ middleware. If either is needed they can be added to the application using the library manager.
+* Updated recipe-make, core-make, and PDL to new major versions
+* Regenerated code with Configurators from ModusToolbox™ v3.0.0
+* Renamed top level board makefile to bsp.mk
+* Removed version.xml file in favor of new props.json
+#### v2.0.0
+* Updated to HAL dependency to v2.0.0
+* Updated CAPSENSE™ dependency to v3.0.0
+* Regenerated code with Configurators from ModusToolbox™ v2.4.0
+#### v1.2.0
+* Added SysClk power management callback
+* Minor branding updates
 #### v1.1.0
 * Updated configuration to include power settings
 * Minor documentation updates
@@ -27,21 +41,21 @@ This version of the CY8CKIT-045S BSP was validated for compatibility with the fo
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox Software Environment         | 2.2     |
-| GCC Compiler                              | 9.3     |
-| IAR Compiler                              | 8.4     |
-| ARM Compiler                              | 6.11    |
+| ModusToolbox™ Software Environment        | 3.0.0   |
+| GCC Compiler                              | 10.3.1  |
+| IAR Compiler                              | 9.30.1  |
+| ARM Compiler                              | 6.16    |
 
-Minimum required ModusToolbox Software Environment: v2.2
+Minimum required ModusToolbox™ Software Environment: v3.0.0
 
 ### More information
 * [CY8CKIT-045S BSP API Reference Manual][api]
 * [CY8CKIT-045S Documentation](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-045s)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
-* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
-* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
+* [Infineon GitHub](https://github.com/infineon)
+* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
-[api]: modules.html
+[api]: https://infineon.github.io/TARGET_CY8CKIT-045S/html/modules.html
 
 ---
-© Cypress Semiconductor Corporation, 2019-2021.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
