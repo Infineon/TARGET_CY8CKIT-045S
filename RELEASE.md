@@ -14,6 +14,11 @@ The CY8CKIT-045S library includes the following:
 * API documentation
 
 ### What Changed?
+#### v3.2.0
+* Added functionality to enable BSP Assistant chip flow
+* Added capabilities to match BSPS created by BSP Assistant chip flow
+#### v3.1.0
+* Add macro `CYBSP_USER_BTN_DRIVE` indicating the drive mode that should be used for user buttons
 #### v3.0.0
 Note: This revision is only compatible with ModusToolbox Tools 3.0 and newer.
 * Removed default dependency on HAL and CAPSENSE™ middleware. If either is needed they can be added to the application using the library manager.
@@ -41,8 +46,8 @@ This version of the CY8CKIT-045S BSP was validated for compatibility with the fo
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox™ Software Environment        | 3.0.0   |
-| GCC Compiler                              | 10.3.1  |
+| ModusToolbox™ Software Environment        | 3.1.0   |
+| GCC Compiler                              | 12.2.1  |
 | IAR Compiler                              | 9.30.1  |
 | ARM Compiler                              | 6.16    |
 
@@ -50,7 +55,7 @@ Minimum required ModusToolbox™ Software Environment: v3.0.0
 
 ### More information
 * [CY8CKIT-045S BSP API Reference Manual][api]
-* [CY8CKIT-045S Documentation](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-045s)
+* [CY8CKIT-045S Documentation](https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-045s/)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
