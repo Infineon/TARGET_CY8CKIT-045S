@@ -14,6 +14,8 @@ The CY8CKIT-045S library includes the following:
 * API documentation
 
 ### What Changed?
+#### v3.2.1
+* Updated the supported capabilities in props.json file for PSoC&trade; 4 BSPs.
 #### v3.2.0
 * Added functionality to enable BSP Assistant chip flow
 * Added capabilities to match BSPS created by BSP Assistant chip flow
@@ -48,7 +50,7 @@ This version of the CY8CKIT-045S BSP was validated for compatibility with the fo
 | :---                                      | :----:  |
 | ModusToolbox™ Software Environment        | 3.1.0   |
 | GCC Compiler                              | 12.2.1  |
-| IAR Compiler                              | 9.30.1  |
+| IAR Compiler                              | 9.40.2  |
 | ARM Compiler                              | 6.16    |
 
 Minimum required ModusToolbox™ Software Environment: v3.0.0
