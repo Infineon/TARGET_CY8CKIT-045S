@@ -216,7 +216,7 @@ void Reset_Handler(void)
     /* CMSIS System Initialization */
     SystemInit();
 
-    /* Copy vector table from ROM to RAM*/
+    /* Copy vector table from ROM to RAM */
     memcpy(__RAM_VECTOR_TABLE, __VECTOR_TABLE, CY_VECTOR_TABLE_SIZE_BYTES);
 
     /* Set vector table offset */
